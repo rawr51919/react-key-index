@@ -2,7 +2,7 @@
 
 > Generate stable, unique keys in your React components.
 
-Play with the demo/example here [here](https://runkit.com/589b3ffeebe39d00147ce0dd/589b9f3ec90f930014b5adaa).
+Play with the demo/example [here](https://runkit.com/589b3ffeebe39d00147ce0dd/589b9f3ec90f930014b5adaa).
 
 ![react-key-index](http://www.automationfuel.com/content/images/2017/02/screenshot.png)
 
