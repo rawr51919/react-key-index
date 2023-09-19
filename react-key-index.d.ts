@@ -1,1 +1,1 @@
-declare module "react-key-index";
+declare module 'react-key-index';
