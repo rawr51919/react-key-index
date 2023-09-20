@@ -4,6 +4,7 @@
   "description": "Generate permanent, predictable keys for your React components.",
   "license": "MIT",
   "repository": "focuswish/react-key-index",
+  "type": "module",
   "author": {
     "name": "Ben",
     "email": "ben@focuswish.com",
