@@ -1,6 +1,6 @@
-let Hashids = require("hashids");
+import Hashids from "hashids";
 export default (arr, label) => {
-	let hashids = new Hashids();
+	let hashids = new Hashids.default();
 	let x = parseInt(label);
 	let digits = [9, 9, x];
 	let obj = {};
