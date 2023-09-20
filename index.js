@@ -1,4 +1,4 @@
-import Hashids from "hashids";
+let Hashids = require("hashids");
 export default (arr, label) => {
 	let hashids = new Hashids();
 	let x = parseInt(label);
