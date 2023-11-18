@@ -1,6 +1,6 @@
 {
   "name": "@rawr51919/react-key-index",
-  "version": "0.1.1",
+  "version": "0.1.1-b",
   "description": "Generate permanent, predictable keys for your React components.",
   "license": "MIT",
   "repository": {
@@ -31,5 +31,6 @@
     "url": "https://github.com/rawr51919/react-key-index/issues"
   },
   "homepage": "https://github.com/rawr51919/react-key-index#readme",
-  "main": "index.js"
+  "main": "index.js",
+  "types": "index.d.ts"
 }
