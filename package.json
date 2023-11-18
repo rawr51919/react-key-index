@@ -1,6 +1,6 @@
 {
   "name": "@rawr51919/react-key-index",
-  "version": "0.1.1-b",
+  "version": "0.1.3-a",
   "description": "Generate permanent, predictable keys for your React components.",
   "license": "MIT",
   "repository": {
@@ -25,6 +25,7 @@
   "devDependencies": {
     "ava": "^5.3.1",
     "nyc": "^15.1.0",
+    "typescript": "^5.2.2",
     "xo": "^0.56.0"
   },
   "bugs": {

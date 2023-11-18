@@ -1,1 +1,3 @@
-declare module '@rawr51919/react-key-index';
+declare function _default(arr: any, label: any): any;
+export default _default;
+//# sourceMappingURL=index.d.ts.map
