@@ -1,3 +1,5 @@
+node_modules
+.vscode
 .sonarlint
 *.log
 package-lock.json
