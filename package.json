@@ -1,15 +1,14 @@
 {
-  "name": "react-key-index",
+  "name": "@rawr51919/react-key-index",
   "version": "0.1.1",
   "description": "Generate permanent, predictable keys for your React components.",
   "license": "MIT",
-  "repository": "focuswish/react-key-index",
-  "type": "module",
-  "author": {
-    "name": "Ben",
-    "email": "ben@focuswish.com",
-    "url": "https://automationfuel.com"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/focuswish/react-key-index.git"
   },
+  "type": "module",
+  "author": "Ben <ben@focuswish.com> (https://automationfuel.com)",
   "engines": {
     "node": ">=4"
   },
@@ -19,9 +18,7 @@
   "files": [
     "index.js"
   ],
-  "keywords": [
-    ""
-  ],
+  "keywords": [],
   "dependencies": {
     "hashids": "^2.3.0"
   },
@@ -29,5 +26,10 @@
     "ava": "^5.3.1",
     "nyc": "^15.1.0",
     "xo": "^0.56.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/rawr51919/react-key-index/issues"
+  },
+  "homepage": "https://github.com/rawr51919/react-key-index#readme",
+  "main": "index.js"
 }
