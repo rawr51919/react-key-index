@@ -18,7 +18,13 @@ jobs:
           node-version-file: 'package.json'
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
+
+      - name: Make CLI tools executable
+        run: |
+          chmod +x ./node_modules/.bin/xo
+          chmod +x ./node_modules/.bin/nyc
+          chmod +x ./node_modules/.bin/ava
 
       - name: Run tests
         run: npm run test
