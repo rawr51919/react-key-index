@@ -1,30 +1,35 @@
-import Hashids from "hashids";
-export default (arr, label) => {
-	let hashids = new Hashids();
-	let x = parseInt(label);
-	let digits = [9, 9, x];
-	let obj = {};
-	let result = arr.map(function(arr, index) {
+import Hashids from 'hashids';
+
+const generateHashIds = (array, label) => {
+	const hashids = new Hashids();
+	const x = Number.parseInt(label, 10);
+	const digits = [9, 9, x];
+	let object = {};
+	const result = array.map((arrayItem, index) => {
 		digits.push(index);
-		if (typeof arr === 'object') {
+		if (typeof arrayItem === 'object') {
 			let i = 0;
-			Object.keys(arr).forEach(function(key) {
-				let x = '';
+
+			for (const key of Object.keys(arrayItem)) {
+				let keyId = '';
 				digits.push(i);
-				x = '_' + key + 'Id';
-				arr[x] = hashids.encode(digits);
-				digits = digits.slice(0, 6);
+				keyId = `_${key}Id`;
+				arrayItem[keyId] = hashids.encode(digits);
+				digits.splice(6); // Keep first 6
 				i++;
-			});
-			return arr;
-		} else {
-			obj = {
-				value: arr,
-				id: hashids.encode(digits)
-			};
-			digits = digits.slice(0, 5);
-			return obj;
+			}
+
+			return arrayItem;
 		}
+
+		object = {
+			value: arrayItem,
+			id: hashids.encode(digits),
+		};
+		digits.splice(5); // Keep first 5
+		return object;
 	});
 	return result;
 };
+
+export default generateHashIds;

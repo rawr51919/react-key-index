@@ -1,0 +1,16 @@
+const config = [
+	{
+		languageOptions: {
+			env: {
+				browser: true,
+				es2021: true,
+				jest: true,
+			},
+		},
+	},
+	{
+		ignores: '**/*.test.js',
+	},
+];
+
+export default config;

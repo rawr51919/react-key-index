@@ -195,3 +195,5 @@ keyIndex(arr, 1);
 ## License
 
 MIT © [Ben](http://automationfuel.com)
+
+[Send an email to Ben](mailto:ben@focuswish.com)

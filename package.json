@@ -24,15 +24,20 @@
     "hashids": "^2.3.0"
   },
   "devDependencies": {
-    "ava": "^6.0.0",
-    "nyc": "^17.0.0",
-    "typescript": "^5.2.2",
-    "xo": "^1.0.0"
+    "ava": "^6.4.1",
+    "nyc": "^17.1.0",
+    "typescript": "^5.9.2",
+    "xo": "^1.2.1"
   },
   "bugs": {
     "url": "https://github.com/rawr51919/react-key-index/issues"
   },
   "homepage": "https://github.com/rawr51919/react-key-index#readme",
   "main": "index.js",
-  "types": "index.d.ts"
+  "types": "index.d.ts",
+  "xo": {
+    "ignores": [
+      "**/*.test.js"
+    ]
+  }
 }
