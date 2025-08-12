@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && nyc ava"
+    "test": "npx xo && npx nyc ava"
   },
   "files": [
     "index.js",
