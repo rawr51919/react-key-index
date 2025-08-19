@@ -13,8 +13,8 @@ const generateHashIds = (array, label) => {
 				// sanitize key: remove leading _ and trailing Id
 				const cleanKey = key.replace(/^_+/, '').replace(/Id$/, '');
 
-				// first key: just `${key}Id`, rest: `_${key}Id`
-				const keyId = i === 0 ? `${cleanKey}Id` : `_${cleanKey}Id`;
+				// ensure the key is Id'd like in the readme
+				const keyId = `_${cleanKey}Id`;
 
 				arrayItem[keyId] = hashids.encode(digits);
 				digits.splice(6); // Keep first 6
