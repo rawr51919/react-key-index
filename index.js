@@ -5,25 +5,17 @@ export default function generateHashIds(array, label) {
 	const x = Number.parseInt(label, 10);
 
 	return array.map((item, arrayIndex) => {
-		const baseDigits = [9, 9, x, arrayIndex]; // Ensures uniqueness per array item
+		const baseDigits = [9, 9, x, arrayIndex]; // ensures uniqueness per array item
+		const newItem = (item !== null && typeof item === 'object') ? {...item} : {value: item};
 
-		if (item !== null && typeof item === 'object') {
-			const newItem = {...item}; // Clone to avoid mutating original
-			let keyIndex = 0;
-			for (const key of Object.keys(item)) {
-				const cleanKey = key.replace(/^_+/, '').replace(/Id$/, '');
-				const keyId = `_${cleanKey}Id`;
-				newItem[keyId] = hashids.encode([...baseDigits, keyIndex]);
-				keyIndex++;
-			}
-
-			return newItem;
+		let keyIndex = 0;
+		for (const key of (item !== null && typeof item === 'object' ? Object.keys(item) : ['value'])) {
+			const cleanKey = key.replace(/^_+/, '').replace(/Id$/, '');
+			const keyId = `_${cleanKey}Id`;
+			newItem[keyId] = hashids.encode([...baseDigits, keyIndex]);
+			keyIndex++;
 		}
 
-		// Primitive values
-		return {
-			value: item,
-			id: hashids.encode([...baseDigits]),
-		};
+		return newItem;
 	});
 }
