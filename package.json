@@ -27,7 +27,7 @@
     "ava": "^6.4.1",
     "nyc": "^17.1.0",
     "typescript": "^5.9.2",
-    "xo": "^1.2.1"
+    "xo": "^1.2.2"
   },
   "bugs": {
     "url": "https://github.com/rawr51919/react-key-index/issues"
