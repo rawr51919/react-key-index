@@ -24,7 +24,7 @@
     "hashids": "^2.3.0"
   },
   "devDependencies": {
-    "ava": "^6.4.1",
+    "ava": "^7.0.0",
     "nyc": "^18.0.0",
     "typescript": "^5.9.2",
     "xo": "^1.2.2"
